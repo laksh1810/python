@@ -77,12 +77,43 @@ My_list = [1,2,3,4,4,5]
 index = My_list.index(3)
 print(index)
 '''
-
+'''
 #Extend a List with Another List:
 My_list = [1,2,3,4,5]
 other_list = [6,7,8,9,10]
 My_list.extend(other_list)
 print(My_list)
+'''
+'''
+#Remove the Last Element:
+My_list = [1,2,3,4,5]
+My_list.pop()
+print(My_list)
+'''
+'''
+#Copy a List (Shallow Copy):
+My_list = [1,2,3,4,5]
+new_list = My_list.copy()
+print(new_list)
+'''
+'''
+#Clear a List:
+My_list = [1,2,3,4,5]
+My_list.clear()
+print(My_list)
+'''
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
