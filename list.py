@@ -102,32 +102,53 @@ My_list = [1,2,3,4,5]
 My_list.clear()
 print(My_list)
 '''
+'''
+#Find the Maximum Value in a List:
 
+My_list = [1,2,3,4,5]
+x = max(My_list)
+print(x)
+'''
+'''
+#Find the Minimum Value in a List:
+My_list = [1,2,3,4,5]
+x = min(My_list)
+print(x)
+'''
+'''
+#List Reversal:
 
+my_list = [1, 2, 3, 4, 5]
+reversed_list = my_list[::-1]
+print(reversed_list)
+'''
+'''
+#List Palindrome Check:
 
+my_list = [1, 2, 3, 2, 1]
+is_palindrome = my_list == my_list[::-1]
+print(is_palindrome)
+'''
+'''
+#List Zipping:
+names = ['Alice', 'Bob', 'Charlie']
+ages = [25, 30, 35]
+zipped = list(zip(names, ages))
+print(zipped)
+'''
+'''
+#List Element Count:
 
+my_list = [1, 2, 2, 3, 4, 2, 5]
+count = my_list.count(2)
+print(count)
+'''
 
+#List Element Removal:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+my_list = [1, 2, 3, 4, 5]
+my_list.remove(3)
+print(my_list)
 
 
 
