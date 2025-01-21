@@ -1,0 +1,97 @@
+'''
+#Check if a Number is Even or Odd:
+num = int(input("Enter the number: "))
+if num % 2 == 0:
+    print("The number is even")
+else:
+    print("The number is odd")       
+'''
+'''
+#Determine the Greater of Two Numbers:
+
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+if num1>num2:
+    print("Num1 is greater than Num2")
+elif num2>num1:
+    print("Num2 is greater than Num1")
+else:
+    print("both numbers are equal")
+'''
+'''
+#Check if a Year is a Leap Year:
+
+year = int(input("Enter a year: "))
+if (year % 4 == 0): 
+    print(f" {year} is a leap year")
+else: 
+    print(f" {year} is not a leap year")
+'''
+'''
+#Find the Largest among Three Numbers:
+
+Num1 = int(input("Enter the first number "))
+Num2 = int(input("Enter the first number "))
+Num3 = int(input("Enter the first number "))
+if Num1>=Num2 and Num1>=3:
+    print(f"{Num1} is the greatest number")
+elif Num2>=Num1 and Num2>=Num3:
+    print(f"{Num2} is the greatest number")
+else:
+    print(f"{Num3} is the greatest number")
+'''
+'''
+#Check if a Character is a Vowel or Consonant:
+char = input("Enter a character: ")
+if char in 'AEIOUaeiou':
+ print("This is a vowel")
+else:
+ print("This is a consonant")
+'''
+'''
+#Check if a Number is Positive, Negative, or Zero:
+
+Num1 = float(input("Enter the number: "))
+if Num1>0:
+    print("The number is positive")
+elif Num1 == 0:
+    print("The Number is 0")
+else:
+    print("The number is negative")        
+'''
+'''
+#check voter eligibility
+
+Age = int(input("Enter your age: "))
+if Age>110 or Age<0:
+    print("Invalid age")
+elif (Age>18):
+    print("You are eligible to vote")
+else:
+    print("Sorry, you are ineligible to vote")
+'''
+
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+x = (a+b)
+y = (a-b)
+z = (a*b)
+print(x,y,z)
+
+
+'''
+elif n % 2 == 0 and 2 >= n <=5:
+    print("Not Weird")
+'''
+
+
+
+
+
+
+
+
+
+
+
+

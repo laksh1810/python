@@ -143,12 +143,14 @@ my_list = [1, 2, 2, 3, 4, 2, 5]
 count = my_list.count(2)
 print(count)
 '''
-
+'''
 #List Element Removal:
 
 my_list = [1, 2, 3, 4, 5]
 my_list.remove(3)
 print(my_list)
+'''
+
 
 
 
