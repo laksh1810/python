@@ -68,21 +68,62 @@ if Age>110 or Age<0:
 elif (Age>18):
     print("You are eligible to vote")
 else:
-    print("Sorry, you are ineligible to vote")
+    print("you are ineligible to vote")
+'''
+'''
+#Check if a string is Palindrome:
+
+String1 = (input("Enter the string: "))
+if String1 == String1[::-1]:
+    print("Is palindrome")
+else:
+    print("is not a palindrome")
+'''
+'''
+#Check if a Year is a Century Year:
+
+year = int(input("Enter the year: "))
+if year % 100 ==0:
+    print("Is a century")
+else: 
+    print("not a century")
 '''
 
-a = int(input("Enter the first number: "))
-b = int(input("Enter the second number: "))
-x = (a+b)
-y = (a-b)
-z = (a*b)
-print(x,y,z)
+#Determine the Season based on Month:
+
+# season = input("Enter the month: ").lower()
+# if season in ["December", "January", "February"]:
+#     print("Winters")
+# elif season in ["March", "April", "May"]:
+#     print("Spring")
+# elif season in ["June", "July", "August"]:
+#     print("Summers")    
+# elif season in ["September" , "October" , "November"]:
+#     print("Autumn")
+# else: 
+#     print("Invalid month / incorrect spelling")
 
 
-'''
-elif n % 2 == 0 and 2 >= n <=5:
-    print("Not Weird")
-'''
+month = input("Enter a month: ").lower()
+if month in ["december", "january", "february"]:
+    print("Winter")
+elif month in ["march", "april", "may"]:
+    print("Spring")
+elif month in ["june", "july", "august"]:
+    print("Summer")
+elif month in ["september", "october", "november"]:
+    print("Autumn")
+else:
+    print("Invalid month")
+
+
+
+
+
+
+
+
+
 
 
 
