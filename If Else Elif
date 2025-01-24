@@ -88,33 +88,176 @@ if year % 100 ==0:
 else: 
     print("not a century")
 '''
-
+'''
 #Determine the Season based on Month:
 
-# season = input("Enter the month: ").lower()
-# if season in ["December", "January", "February"]:
-#     print("Winters")
-# elif season in ["March", "April", "May"]:
-#     print("Spring")
-# elif season in ["June", "July", "August"]:
-#     print("Summers")    
-# elif season in ["September" , "October" , "November"]:
-#     print("Autumn")
-# else: 
-#     print("Invalid month / incorrect spelling")
-
-
-month = input("Enter a month: ").lower()
-if month in ["december", "january", "february"]:
-    print("Winter")
-elif month in ["march", "april", "may"]:
+season = input("Enter the month: ")
+if season in ["December", "January", "February"]:
+    print("Winters")
+elif season in ["March", "April", "May"]:
     print("Spring")
-elif month in ["june", "july", "august"]:
-    print("Summer")
-elif month in ["september", "october", "november"]:
+elif season in ["June", "July", "August"]:
+    print("Summers")    
+elif season in ["September" , "October" , "November"]:
     print("Autumn")
+else: 
+    print("Invalid month / incorrect spelling")
+'''
+'''
+#Check if a Triangle is Equilateral, Isosceles, or Scalene:
+
+Side1 = float(input("Enter the First side: "))
+Side2 = float(input("Enter the Second side: "))
+Side3 = float(input("Enter the Third side: "))
+
+if Side1 == Side2 == Side3:
+    print("Equtorial Triangle")
+elif Side1 == Side2 or Side2 == Side3 or Side1 == Side3:
+    print("Isosceles Triangle")
 else:
-    print("Invalid month")
+    print("Scalene Triangle")
+'''
+'''
+#Check if a Number is Divisible by Both 3 and 5:
+Num1 = int(input("Enter the number: "))
+if Num1 % 5 == 0 and Num1 % 3 == 0:
+    print("Number is divisible by both 5 & 3")
+elif Num1 % 3 == 0:
+        print("Number is only divisble by 3")
+elif Num1 % 5 == 0:
+        print("Number is only divisble by 5")
+else:
+    print("sorry")
+
+'''
+'''
+#Determine the Discount Percentage
+
+original_price = float(input("Enter the original price: "))
+discounted_price = float(input("Enter the discounted price: "))
+discount = (original_price - discounted_price) / original_price*100
+if discount > 0:
+    print(discount,"%")
+else: 
+    print("No Discount")
+'''
+'''
+#Check if a Number is a Perfect Square:
+
+import math
+num1 = int(input("Enter the sqaure: "))
+if math.isqrt(num1) ** 2 == num1:
+    print("perfect square")
+else :
+    print("Not a perfect square")
+'''
+
+# NESTED IF ELSE
+
+'''
+# Check if a number is positive or negative and even or odd:
+
+num = 10
+if num > 0:
+    if num % 2 == 0:
+        print("Number is even and is positive")
+    else:
+        print("Number is odd and is positive")
+else:
+    print("Negative")            
+'''
+'''
+#Determine the largest of three numbers:
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+if a > b:
+    if a > c:
+        print("a is the largest")
+    else:
+        print("c is the largest")
+else:
+    if b > c:
+        print("b is the largest")
+    else:
+        print("c is the largest")
+'''
+'''
+#Check if a user is eligible to vote:         #Example 1
+
+age = int(input("Enter your Age: "))
+citizenship = input("Enter citizenship: ")
+
+if age > 0 and age <= 115:
+    if age >= 18 and citizenship == "US":
+        print("You are eligible to Vote")
+    else: 
+        print("You are not a US citizen")
+    if age <= 18:
+        print("You are underage")
+else:
+    print("Invalid Age")    
+'''
+          
+'''
+#Check if a user is eligible to vote:         #Example 2
+age = int(input("Enter your Age: "))
+citizenship = input("Enter citizenship: ")
+
+if age > 0 and age <= 115:
+    if age >= 18 :
+        if citizenship == "US":
+            print("You are eligible to Vote")
+        else: 
+            print("You are not a US citizen")
+    else:      
+        print("You are underage")
+else:
+    print("Invalid Age")    
+'''
+'''
+#Check if a user is eligible to vote:         #Example 3
+age = int(input("Enter your Age: "))
+if age > 0 and age <= 115:
+    if age >= 18 :
+        citizenship = input("Enter Citizenship: ")
+        if citizenship == "US":
+            print("You are eligible to Vote")
+        else: 
+            print("You are not a US citizen")        
+    else:
+        print("You are underage")
+else: 
+    print("INVALID AGE")                
+'''
+
+# #Determine the eligibility for a loan based on income and credit score:
+
+# income = float(input("Enter your monthly income: "))
+# credit_score = int(input("Enter your credit score: "))
+
+# if income >= 10000:
+#     if credit_score >= 650:
+#         print ("Congratulations! You are eligible for a loan offer")
+#     else:
+#         print("Sorry! Credit score too low, please try again after 90 days")
+# else:
+#     print("Sorry! income too low")
+
+income = float(input("Enter your monthly income: "))
+credit_score = int(input("Enter your credit score: "))
+
+if income >= 10000:
+    if credit_score >= 650:
+        print("Congratulations! You are eligible for a loan offer")
+    else:
+        print("Sorry! Credit score too low, please try again after 90 days")
+else:
+    if credit_score < 650:
+        print("Sorry! No offers for you")
+    else:
+        print("Sorry! Income too low")
+
 
 
 
