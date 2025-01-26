@@ -230,20 +230,21 @@ if age > 0 and age <= 115:
 else: 
     print("INVALID AGE")                
 '''
+'''
+#Determine the eligibility for a loan based on income and credit score:
 
-# #Determine the eligibility for a loan based on income and credit score:
+income = float(input("Enter your monthly income: "))
+credit_score = int(input("Enter your credit score: "))
 
-# income = float(input("Enter your monthly income: "))
-# credit_score = int(input("Enter your credit score: "))
-
-# if income >= 10000:
-#     if credit_score >= 650:
-#         print ("Congratulations! You are eligible for a loan offer")
-#     else:
-#         print("Sorry! Credit score too low, please try again after 90 days")
-# else:
-#     print("Sorry! income too low")
-
+if income >= 10000:
+    if credit_score >= 650:
+        print ("Congratulations! You are eligible for a loan offer")
+    else:
+        print("Sorry! Credit score too low, please try again after 90 days")
+else:
+    print("Sorry! income too low")
+'''
+'''
 income = float(input("Enter your monthly income: "))
 credit_score = int(input("Enter your credit score: "))
 
@@ -257,14 +258,53 @@ else:
         print("Sorry! No offers for you")
     else:
         print("Sorry! Income too low")
+'''
 
+'''
+num = int(input("Enter the number: "))
+if num == 0:
+    print("Number is Zero")
+elif num % 2 ==0:
+    print("Number is even")
+else:
+    print("Number is odd")
+'''
+'''
+Check if a person is eligible for a senior discount:
 
+age = int(input("Enter your age: "))
+membership = bool(input("Do you have membership: "))
 
+if age >= 60:
+    if membership == "Yes":
+        print("You are eligible for senior discount")
+    else:
+        print("Not eligible without membership")
+else: 
+    print("Not eligible")    
+'''
+'''
+age = int(input("Enter your age: "))
+membership = True
+if age >= 60:
+    if membership:
+        print("Eligible for senior discount")
+    else:
+        print("Not eligible without membership")
+else:
+    print("Not eligible")
+'''
+'''
+char = input("Enter the character: ")
 
-
-
-
-
+if char.isalpha():
+    if char in 'aeiouAEIOU':
+        print("Is a vowel")
+    else:
+        print("A consonant")
+else:
+    print("not a character")        
+'''
 
 
 
