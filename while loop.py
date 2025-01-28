@@ -112,20 +112,14 @@ while num <= 5:
     num += 1
 print("Sum of squares:", sum_of_squares)
 '''
-
+'''
 #calculate square root
 
-# num = 5
-# while num ** 2:
-#     print(num**2)
-#     break
-
-number = 25
-guess = number / 2
-while abs(guess * guess - number) > 1e-6:
-    guess = 0.5 * (guess + number / guess)
-    print("Square root:", guess)
-
+num = 5
+while num ** 2:
+    print(num**2)
+    break
+'''
 
 
 
