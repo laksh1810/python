@@ -135,7 +135,7 @@ def count_vowels(s):
     return count
 print(count_vowels("hello"))
 '''
-
+'''
 #Check Leap Year Function:
 
 def leap_year(year):
@@ -145,8 +145,16 @@ def leap_year(year):
         return False
 
 print(leap_year(2024))
+'''
 
 
+#Write a Python function to sum all the numbers in a list.
+
+n = 5
+sum = 1
+while sum <= 5:
+    n += sum
+    print(n)
 
 
 
