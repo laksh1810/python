@@ -47,7 +47,7 @@ num = int(input("Enter the number: "))
 multiplication_table(num)
 '''
 
-
+'''
 #ATM Withdrawal Simulation
 def withdrawal(balance, amount):
     if amount>balance:
@@ -58,3 +58,5 @@ balance = 5000
 amount = int(input("Enter the amount: "))
 new_balance = withdrawal(balance, amount)
 print("New balance: ", new_balance)
+'''
+
